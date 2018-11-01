@@ -1,0 +1,19 @@
+{
+  "name": "fylo-landing-page",
+  "version": "1.0.0",
+  "description": "This page started life as a challenge on [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/sass/styles.sass --watch src/css/styles.css",
+    "server": "browser-sync start -s --files 'src/css/styles.css', '**/*.html'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "sass": "^1.14.3"
+  }
+}
