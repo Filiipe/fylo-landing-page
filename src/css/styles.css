@@ -3,9 +3,24 @@
   --color-secondary: hsl(243, 87%, 12%);
   --color-highlight: hsl(163, 95%, 43%);
   --white: hsl(106, 0%, 98%);
-  --grey: hsl(0, 0%, 50%);
+  --gray: hsl(0, 0%, 50%);
   --black: hsl(0, 0%, 17%);
   --font-heading: "Raleway", sans-serif;
+}
+
+.heading {
+  font-weight: 700;
+  font-family: var(--font-heading);
+  padding: 2rem 0;
+}
+
+.heading--small {
+  font-size: 1.8rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: var(--gray);
 }
 
 *,
@@ -28,7 +43,7 @@ body {
 }
 
 .attribution {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -46,24 +61,22 @@ body {
   width: 100%;
   background-color: var(--white);
   padding: 2rem;
-}
-
-.landing__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-buttons {
-  display: flex;
+  background: url(../../images/bg-intro-mobile.svg) no-repeat 100% top;
 }
 
 .landing__text {
   height: 100vh;
   text-align: center;
 }
-.landing__text > p {
-  font-size: 1.4rem;
-  color: var(--grey);
+
+.landing__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
 }
 
 .main-illustration {
@@ -71,10 +84,40 @@ body {
   height: 31rem;
 }
 
-.heading-1 {
-  font-weight: 700;
-  font-family: var(--font-heading);
-  padding: 2rem 0;
+.features {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.apps {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.apps__connection {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 25rem;
+}
+
+.apps-logo {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 2rem rgba(43, 43, 43, 0.2);
+}
+.apps-logo > img {
+  width: 15rem;
+}
+
+.apps-description {
+  box-shadow: 0.2rem 0.2rem 2rem rgba(43, 43, 43, 0.2);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0 2rem 3rem 2rem;
 }
 
 .button {
@@ -95,14 +138,17 @@ body {
 
 .button--in,
 .button--up {
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   height: 3.5rem;
   background-color: var(--color-highlight);
 }
 
 .button--in {
   background: none;
-  color: var(--black);
+}
+
+.icon {
+  padding: 8rem 0 3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
