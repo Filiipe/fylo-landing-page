@@ -41,10 +41,11 @@ body {
 .attribution {
   font-size: 1.2rem;
   text-align: center;
+  color: var(--white);
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #bbb8fa;
 }
 
 .logo {
@@ -142,6 +143,31 @@ body {
   align-items: flex-end;
 }
 
+.footer__contact {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.footer__contact > p {
+  color: var(--white);
+  display: flex;
+  margin: 3rem 0;
+}
+
+.footer__links > p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 5rem 0;
+}
+.footer__links .links {
+  list-style: none;
+  color: var(--white);
+  margin: 3rem 0;
+}
+.footer__links ul:last-child li:last-child {
+  margin-bottom: 5rem;
+}
+
 .button {
   border: none;
   background-color: var(--color-highlight);
@@ -185,6 +211,10 @@ body {
 
 .icon {
   padding: 8rem 0 3rem 0;
+}
+
+.icon--footer {
+  margin-right: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
